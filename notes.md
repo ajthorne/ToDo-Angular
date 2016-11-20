@@ -10,7 +10,7 @@
 ###Directives:
 Bind behavior to HTML elements, encourage readability and reusability
 
-###Built in directives:
+####Built in directives:
 - ng-app: tells AngularJS where the myApp module will live in the HTML (usually in body)
 - ng-controller: defines the controller scope
     - properties inside it are defined with ``$scope``
