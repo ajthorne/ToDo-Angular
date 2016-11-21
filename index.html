@@ -8,11 +8,16 @@
   </head>
   <body ng-app="myApp">
     <div ng-controller="MainController" class="controller">
+      <h2>What do you need to do?!</h2>
+      <ul class="todo-list">
+        <li ng-repeat="todo in todos">{{todo}}</li>
+      </ul>
+      <form>
+        <input type="text" placeholder="Add a task" ng-model="data.task"/>
+        <input type="button" value="+" ng-click="add()">
+      </form>
 
     </div>
-    <script src="main.js" type="text/javascript">
-
-    </script>
 
   <!-- Modules -->
   <script src="js/main.js"></script>
