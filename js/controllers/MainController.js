@@ -4,10 +4,9 @@ app.controller('MainController', function ($scope) {
     'Commit once a day',
     'Get a JavaScript tattoo'
   ];
-  $scope.data = {};
+  $scope.task;
   $scope.add = function() {
-    console.log($scope.data.task.$modelValue);
-    // $scope.todos.push($scope.newToDo);
-    // console.log('i\'m trying');
+    // console.log($scope.task);
+    $scope.todos.push($scope.task);
   }
 });
