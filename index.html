@@ -10,14 +10,14 @@
     <div ng-controller="MainController" class="controller">
       <h2>What do you need to do?!</h2>
       <ol class="todo-list">
-        <li ng-repeat="todo in todos">
-          {{todo}}
-          <input type="button" value="x" ng-click="done()">
+        <li class="todo-item" ng-repeat="todo in todos">
+          <p>{{todo}}</p>
+          <input id="done-btn" type="button" value="x" ng-click="done()">
         </li>
       </ol>
       <form>
-        <input type="text" placeholder="Add a task" ng-model="task"/>
-        <input type="button" value="+" ng-click="add()">
+        <input class="add-input" type="text" placeholder="Add a task" ng-model="task"/>
+        <input id="add-btn" type="button" value="+" ng-click="add()">
       </form>
 
     </div>

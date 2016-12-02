@@ -1,3 +1,57 @@
 body {
   background: honeydew;
 }
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #7cda7c;
+  text-shadow: 1px 0px 1px black;
+}
+
+li {
+  padding: 1%;
+  border: 2px solid black;
+  margin-bottom: 2rem;
+  position: relative;
+  border-radius: 8px;
+}
+
+p {
+  font-size: 1.3rem;
+  padding: 1%;
+  margin: 0;
+}
+
+#done-btn {
+  position: absolute;
+  bottom: -0.5rem;
+  right: 0;
+  font-size: 0.5rem;
+  border-radius: 50%;
+  background-color: black;
+  border: 0;
+  color: honeydew;
+}
+
+form {
+  /*padding-left: 1rem; */
+  width: 50%;
+  margin: 0 auto;
+}
+
+.add-input {
+  width: 90%;
+  box-sizing: border-box;
+  padding: 2%;
+  font-size: 1.3rem;
+
+}
+
+#add-btn {
+  width: 9%;
+  border: 1px solid gray;
+  font-size: 1.3rem;
+  padding: 2%;
+
+}

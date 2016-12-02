@@ -11,7 +11,7 @@ app.controller('MainController', function ($scope) {
   }
 
   $scope.done = function(todo) {
-    var index = $scope.todos.indexOf(todo)
+    let index = $scope.todos.indexOf(todo)
     $scope.todos.splice(index,1);
   }
 });
