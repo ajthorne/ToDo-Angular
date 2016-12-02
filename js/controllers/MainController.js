@@ -9,4 +9,9 @@ app.controller('MainController', function ($scope) {
     // console.log($scope.task);
     $scope.todos.push($scope.task);
   }
+
+  $scope.done = function(todo) {
+    var index = $scope.todos.indexOf(todo)
+    $scope.todos.splice(index,1);
+  }
 });

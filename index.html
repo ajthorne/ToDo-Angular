@@ -10,7 +10,10 @@
     <div ng-controller="MainController" class="controller">
       <h2>What do you need to do?!</h2>
       <ol class="todo-list">
-        <li ng-repeat="todo in todos">{{todo}}</li>
+        <li ng-repeat="todo in todos">
+          {{todo}}
+          <input type="button" value="x" ng-click="done()">
+        </li>
       </ol>
       <form>
         <input type="text" placeholder="Add a task" ng-model="task"/>
